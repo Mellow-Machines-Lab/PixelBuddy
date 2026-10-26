@@ -11,49 +11,45 @@
     },
     {
       "at": 0.001,
-      "line": "{\"t\":\"do\",\"id\":1268569295,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
+      "line": "{\"t\":\"do\",\"id\":2126559139,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
     },
     {
-      "at": 1.004,
+      "at": 1.01,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 1.004,
-      "line": "{\"t\":\"do\",\"id\":1268569296,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"new_task\"}}"
-    },
-    {
-      "at": 1.005,
+      "at": 1.013,
       "cause": {
         "kind": "prompt",
         "text": "You ask Claude: “The invoice tests for discount codes and sales tax fail. Make them pass.”"
       }
     },
     {
-      "at": 1.326,
+      "at": 1.329,
       "effect": "Pixel makes a calm face and says “Go”",
-      "line": "{\"t\":\"do\",\"id\":1268569297,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{\"take\":\"phase1.word.begin.go__calm__contained\"},\"mood\":\"calm\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":2126559140,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{\"take\":\"phase1.word.begin.go__calm__contained\"},\"mood\":\"calm\",\"loops\":2}}"
     },
     {
-      "at": 2.392,
+      "at": 2.394,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"analyzing\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,1,\"read\"]]}"
     },
     {
-      "at": 2.392,
-      "line": "{\"t\":\"do\",\"id\":1268569298,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"read\",\"as\":\"arrive\"}}"
+      "at": 2.394,
+      "line": "{\"t\":\"do\",\"id\":2126559141,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"read\",\"as\":\"arrive\"}}"
     },
     {
-      "at": 3.001,
+      "at": 3.004,
       "cause": {
         "kind": "tool",
         "text": "Claude reads test/invoice.test.js"
       }
     },
     {
-      "at": 4.004,
+      "at": 4.01,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"analyzing\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,2,\"read\"]]}"
     },
     {
-      "at": 4.646,
+      "at": 4.65,
       "cause": {
         "kind": "tool",
         "text": "Claude reads src/invoice.js"
@@ -65,11 +61,11 @@
     },
     {
       "at": 5.712,
-      "line": "{\"t\":\"do\",\"id\":1268569299,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
+      "line": "{\"t\":\"do\",\"id\":2126559142,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
     },
     {
       "at": 8.378,
-      "line": "{\"t\":\"do\",\"id\":1268569300,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"FAIL\",\"as\":\"hail\"}}"
+      "line": "{\"t\":\"do\",\"id\":2126559143,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"FAIL\",\"as\":\"hail\"}}"
     },
     {
       "at": 8.378,
@@ -79,145 +75,145 @@
       }
     },
     {
-      "at": 8.698,
+      "at": 8.696,
       "effect": "Pixel makes a determined face and says “Verify”",
-      "line": "{\"t\":\"do\",\"id\":1268569301,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{\"take\":\"phase1.word.test.verify__determined__contained\"},\"mood\":\"determined\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":2126559144,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{\"take\":\"phase1.word.test.verify__determined__contained\"},\"mood\":\"determined\",\"loops\":2}}"
     },
     {
-      "at": 8.699,
+      "at": 8.696,
       "effect": "Pixel's mood is now determined",
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,3,\"npm test\"]]}"
     },
     {
-      "at": 9.766,
+      "at": 9.76,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,4,\"edit +15 -3\"]]}"
     },
     {
-      "at": 10.003,
+      "at": 10.009,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"tool_use\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,4,\"edit +15 -3\"]]}"
     },
     {
-      "at": 11.367,
+      "at": 11.359,
       "cause": {
         "kind": "tool",
         "text": "Claude edits src/invoice.js"
       }
     },
     {
-      "at": 12.434,
+      "at": 12.426,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,5,\"npm test\"]]}"
     },
     {
-      "at": 12.434,
-      "line": "{\"t\":\"do\",\"id\":1268569302,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
+      "at": 12.426,
+      "line": "{\"t\":\"do\",\"id\":2126559145,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
     },
     {
-      "at": 15,
-      "line": "{\"t\":\"do\",\"id\":1268569303,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"FAIL\",\"as\":\"hail\"}}"
+      "at": 14.997,
+      "line": "{\"t\":\"do\",\"id\":2126559146,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"FAIL\",\"as\":\"hail\"}}"
     },
     {
-      "at": 15,
+      "at": 14.997,
       "cause": {
         "kind": "tool_failed",
         "text": "Claude: run the invoice tests, and it fails"
       }
     },
     {
-      "at": 17.003,
+      "at": 17.009,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,5,\"npm test\"]]}"
     },
     {
-      "at": 19.801,
+      "at": 19.797,
       "effect": "Pixel shows that the context was compacted",
-      "line": "{\"t\":\"do\",\"id\":1268569304,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"compacted\"}}"
+      "line": "{\"t\":\"do\",\"id\":2126559147,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"compacted\"}}"
     },
     {
-      "at": 19.801,
-      "line": "{\"t\":\"do\",\"id\":1268569305,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"context\",\"as\":\"compact\"}}"
+      "at": 19.797,
+      "line": "{\"t\":\"do\",\"id\":2126559148,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"context\",\"as\":\"compact\"}}"
     },
     {
-      "at": 19.801,
+      "at": 19.797,
       "cause": {
         "kind": "compact",
         "text": "Claude's context is full: it compacts the conversation"
       }
     },
     {
-      "at": 20.121,
+      "at": 20.113,
       "effect": "Pixel makes a confused face and says “Mmm?”",
-      "line": "{\"t\":\"do\",\"id\":1268569306,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{\"take\":\"phase1.nonverbal.ponder.mmm__curious__contained\"},\"mood\":\"confused\",\"loops\":1}}"
+      "line": "{\"t\":\"do\",\"id\":2126559149,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{\"take\":\"phase1.nonverbal.ponder.mmm__curious__contained\"},\"mood\":\"confused\",\"loops\":1}}"
     },
     {
-      "at": 22.255,
+      "at": 22.246,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"tool_use\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,6,\"edit +7 -4\"]]}"
     },
     {
-      "at": 23.854,
+      "at": 23.845,
       "cause": {
         "kind": "tool",
         "text": "Claude edits src/invoice.js"
       }
     },
     {
-      "at": 24.921,
+      "at": 24.912,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,7,\"npm test\"]]}"
     },
     {
-      "at": 24.921,
-      "line": "{\"t\":\"do\",\"id\":1268569307,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
+      "at": 24.912,
+      "line": "{\"t\":\"do\",\"id\":2126559150,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
     },
     {
-      "at": 27.588,
-      "line": "{\"t\":\"do\",\"id\":1268569308,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"PASS\",\"as\":\"pass\"}}"
+      "at": 27.579,
+      "line": "{\"t\":\"do\",\"id\":2126559151,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"PASS\",\"as\":\"pass\"}}"
     },
     {
-      "at": 27.588,
+      "at": 27.58,
       "cause": {
         "kind": "tool",
         "text": "Claude: run the invoice tests"
       }
     },
     {
-      "at": 27.91,
+      "at": 27.894,
       "effect": "Pixel makes a happy face and says “Eep!”",
-      "line": "{\"t\":\"do\",\"id\":1268569309,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{\"take\":\"phase1.nonverbal.delight.eep__happy__contained\"},\"mood\":\"happy\",\"loops\":1}}"
+      "line": "{\"t\":\"do\",\"id\":2126559152,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{\"take\":\"phase1.nonverbal.delight.eep__happy__contained\"},\"mood\":\"happy\",\"loops\":1}}"
     },
     {
-      "at": 27.91,
+      "at": 27.895,
       "effect": "Pixel's mood is now happy",
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,7,\"npm test\"]]}"
     },
     {
-      "at": 30.003,
+      "at": 30.009,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,7,\"npm test\"]]}"
     },
     {
-      "at": 30.999,
+      "at": 30.996,
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"happy\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 30.999,
-      "line": "{\"t\":\"do\",\"id\":1268569310,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
+      "at": 30.996,
+      "line": "{\"t\":\"do\",\"id\":2126559153,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
     },
     {
-      "at": 31,
+      "at": 30.997,
       "cause": {
         "kind": "done",
         "text": "Claude finishes"
       }
     },
     {
-      "at": 31.321,
+      "at": 31.314,
       "effect": "Pixel celebrates and says “Oh yeah”",
-      "line": "{\"t\":\"do\",\"id\":1268569311,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"invoice-discounts-and..\"},\"say\":{\"take\":\"phase1.phrase.celebrate.oh-yeah__excited__contained\"},\"mood\":\"excited\",\"loops\":3}}"
+      "line": "{\"t\":\"do\",\"id\":2126559154,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"invoice-discounts-and..\"},\"say\":{\"take\":\"phase1.phrase.celebrate.oh-yeah__excited__contained\"},\"mood\":\"excited\",\"loops\":3}}"
     },
     {
-      "at": 31.321,
+      "at": 31.315,
       "effect": "Pixel's mood is now proud",
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"proud\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     }
   ],
-  "face": "pixel",
+  "face": "gel",
   "length": 37.72,
   "name": "Pixel",
   "script": "8bb18baf3c8b3f50c9135b5b2446b7f2a2fd2c8c4f9d2addc361415ee7d5a2b3",
