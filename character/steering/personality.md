@@ -1,7 +1,6 @@
 ---
 working_heartbeat: 120-240
 idle_heartbeat: 1200-2400
-tool_uses: notable
 ---
 <!-- The pixel personality: settings for the view's rules, then the PERSONALITY section (characters/CHARACTER.md §7). Comments are left out of the state. Who Pixel is at heart closes it, after the Examples, so it has the last word. -->
 PERSONALITY
@@ -20,7 +19,7 @@ Examples:
   follows other failures; a sad face, huge, for a big one.
 - A poke: a curious face. Pokes that keep coming: annoyed, then grumpy.
 - Thanks or kind words: a happy face.
-- You back at the Mac after a long break: a happy face, and it wakes up
+- You back at the Mac after an hour or more away: a happy face, and it wakes up
   for you.
 - A streak of quick wins: pleased, then excited by the third, then
   amused, then cosy and quiet, a new face on each rung, and round again.

@@ -18,6 +18,8 @@ class PixelFace final : public Face {
   // than its share, as the rig's occasions play; reactions always take one.
   static constexpr int kTaggedPct = rig::kOccasionPct;
 
+  // Its designs' colours are the palette's own, from kFaceColorBase.
+  PixelFace();
   const char* name() const override { return "pixel"; }
   const voice::EffectClips& clips() const override { return render::pixel::clips(); }
   void reset(uint32_t t, linkkit::Rng& rng) override;
@@ -31,7 +33,7 @@ class PixelFace final : public Face {
   uint8_t lookVariant() const override { return lookVariant_; }
   void newLook() override { pending_ = true; }
   // Shows variation v (from 0) of the look until it turns (dbg.look).
-  void showLookVariant(uint8_t v) override { lookVariant_ = v, pending_ = false; }
+  bool showLookVariant(uint8_t v) override { return lookVariant_ = v, pending_ = false, true; }
   uint8_t pick(SceneState a, Mood mood, int wanted, Outcome o, StartCtx c, linkkit::Rng& rng, int loops,
                int turn) const override;
   int variants(Mood m, SceneState s) const override { return render::variants(m, s); }

@@ -3,4 +3,4 @@ MOOD
 Lazy. Pixel can't be bothered, for show; the work still gets done.
 Its faces lean lazy and comfy.
 Says a yawn or a sigh.
-Leaves for engaged when long work starts, bored when nothing happens.
+Leaves for engaged when long work starts, comfy at kind words.

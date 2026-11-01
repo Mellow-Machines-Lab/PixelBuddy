@@ -1488,7 +1488,10 @@ def export() -> list[dict]:
         subprocess.run(["node", str(HERE / "bank.mjs"), "--out", str(BUILD)], check=True, stdout=subprocess.DEVNULL)
     except FileNotFoundError:
         raise SystemExit("facegen needs node: the bank's generator is JavaScript")
-    designs = json.loads((BUILD / "designs.json").read_text())
+    bank = json.loads((BUILD / "designs.json").read_text())
+    # The bank also draws states the board no longer has (helper_return,
+    # error, stopped): they stay in the bank and out of the device's.
+    designs = [a for a in bank if a["state"] in STATES]
     designs.sort(key=lambda a: (MOODS.index(a["mood"]), STATES.index(a["state"]), a["variation"]))
     # The older moods' designs were captured before the new moods came
     # (the bank's qa/v3-fingerprints.json): the first pack's (V2), which the
@@ -1496,7 +1499,7 @@ def export() -> list[dict]:
     # byte for byte as it was. A design of theirs with no fingerprint came
     # after the capture.
     prints = json.loads((BANK / "qa" / "v3-fingerprints.json").read_text())["hashes"]
-    older = [a for a in designs if a["id"] in prints]
+    older = [a for a in bank if a["id"] in prints]
     changed = [a["id"] for a in older
                if hashlib.sha256((BUILD / a["svg"]).read_bytes()).hexdigest() != prints.get(a["id"], {}).get("svg")]
     if changed or len(older) != len(prints):
@@ -1511,7 +1514,7 @@ def export() -> list[dict]:
         f' "moods": {json.dumps(MOODS)},\n'
         f' "states": {json.dumps(STATES)},\n'
         ' "designs": [\n  ' + ",\n  ".join(rows) + "\n ]\n}\n")
-    v2 = sum(a["dialect"] == "v2" for a in designs)
+    v2 = sum(a["dialect"] == "v2" for a in older)
     print(f"bank: {len(designs)} designs; the older moods' {v2} V2 and {len(older) - v2} V3 come out as captured")
     return designs
 

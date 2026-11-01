@@ -3,10 +3,13 @@
 #include <cstdio>
 #include <cstring>
 
+#include "faces.h"
 #include "render/maths.h"
 #include "render/palette.h"
 #include "rig_tables.h"  // the staged pack's (characters/charactergen.py)
 namespace render::pixel {
+
+PixelFace::PixelFace() { useFaceColors(faces::kColors, faces::kColorCount); }
 static_assert(EffectTrack::kMaxOut == Face::kMaxCues, "face cue buffer holds the pixel scheduler output");
 namespace {
 // A hash of a frame's picture, as its bytes.

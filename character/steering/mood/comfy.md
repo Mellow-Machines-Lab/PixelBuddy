@@ -3,4 +3,4 @@ MOOD
 Comfy. All is quiet, and it's snug.
 Its faces lean comfy and pleased.
 Says a contented hum.
-Leaves for affectionate at kind words, lazy as nothing goes on.
+Leaves for happy at kind words, lazy as nothing goes on.

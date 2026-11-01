@@ -24,7 +24,7 @@
 {"brain": {"react.face": "grumpy", "say": "tickled", "react.intensity": "medium"}, "mood": "grumpy"}
 // Claude is about to test; you get impatient, then kind, before the run.
 {"you": "talk", "text": "Still not done? Come on, Pixel!", "after": 2.5}
-{"brain": {"react.face": "whiny", "react.move": "status", "react.intensity": "big"}, "mood": "whiny", "after": 0.75}
+{"brain": {"react.face": "whiny", "react.move": "status", "react.intensity": "big"}, "mood": "sad", "after": 0.75}
 {"you": "talk", "text": "Hey, I was too harsh. You're doing fine. Take your time.", "hold": 3, "after": 4}
 {"brain": {"react.face": "calm", "react.move": "thanks", "react.intensity": "big"}, "mood": "calm", "after": 0.75}
 {"agent": "run", "cmd": "npm test", "about": "Run the shortcut tests", "fails": true, "say": "Now the tests.", "after": 2, "takes": 3}

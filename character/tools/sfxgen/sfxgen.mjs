@@ -38,6 +38,9 @@ const root = path.resolve(here, '../..');  // Pixel's pack
 const bank = path.join(root, 'design/boop-sound-bank-v4');
 const manifestFile = path.join(root, 'tools/facegen/design/manifest.json');
 const out = path.join(root, 'firmware/include/sfx.h');
+// The needs-you arc plays clips of its own over its design (kArcCues):
+// they're made whether or not a timeline uses them.
+const arcFile = path.join(root, 'firmware/src/render/pixel/needs_you.h');
 
 const policies = ['silent', 'loop', 'entry', 'sparse'];
 const LOOPS = 8;  // the loops of a routine design whose picks are baked
@@ -140,15 +143,20 @@ function main() {
   const {moods, states, designs} = manifest;
   // The designs must be the bank's, as facegen last listed them, or the
   // sounds wouldn't line up with faces.h.
+  // The bank's designs for the board's states: it also draws states the
+  // board no longer has, which facegen leaves out.
   const listed = new Map(designs.map(d => [d.id, d]));
-  if (listed.size !== catalog.length ||
-      catalog.some(a => listed.get(a.id)?.variation !== a.variation || listed.get(a.id)?.seconds !== a.seconds)) {
+  const drawn = catalog.filter(a => states.includes(a.state));
+  if (listed.size !== drawn.length ||
+      drawn.some(a => listed.get(a.id)?.variation !== a.variation || listed.get(a.id)?.seconds !== a.seconds)) {
     throw new Error(`${path.relative(root, manifestFile)} isn't the bank's designs: run make faces first`);
   }
   const count = (m, s) => designs.filter(d => d.mood === m && d.state === s).length;
   const scores = designs.map(timeline);
   const events = scores.flatMap(s => s.lists.flat());
-  const names = [...new Set(events.map(e => e.effect))].sort();
+  const arc = fs.readFileSync(arcFile, 'utf8').match(/kArcCues\[\] = \{([\s\S]*?)\};/)[1];
+  const arcClips = [...arc.matchAll(/"(\w+)"/g)].map(m => m[1]);
+  const names = [...new Set([...events.map(e => e.effect), ...arcClips])].sort();
   const made = names.map(clip);
   const clips = made.map(c => c.data);
 

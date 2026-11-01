@@ -37,6 +37,8 @@ static_assert(kTalkW == 14 && kTalkH == 12, "the o's box");
 constexpr int kTalkX = 153, kTalkY = 128;
 // So a frame's talkInk, a scene colour, is black only while the mouth doesn't talk.
 static_assert(kSceneBase > kBlack, "a scene colour is never black");
+static_assert(kSceneBase == kFaceColorBase && kSceneBase + kColorCount - 1 <= kSage,
+              "the designs' colours are the palette's own, from kFaceColorBase, before the sage");
 
 const Scene& scene(const SceneShow& s) { return kScenes[sceneOf(s.mood, s.state, s.variant)]; }
 
