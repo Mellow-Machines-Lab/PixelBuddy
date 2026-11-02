@@ -11,129 +11,133 @@
     },
     {
       "at": 0.001,
-      "line": "{\"t\":\"do\",\"id\":190996080,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
+      "line": "{\"t\":\"do\",\"id\":1506555442,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
     },
     {
-      "at": 1.004,
+      "at": 1.06,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 1.006,
+      "at": 1.063,
       "cause": {
         "kind": "prompt",
         "text": "You ask Claude: “Tidy the settings page”"
       }
     },
     {
-      "at": 2.053,
+      "at": 2.094,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 2.053,
-      "line": "{\"t\":\"do\",\"id\":190996081,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
+      "at": 2.094,
+      "line": "{\"t\":\"do\",\"id\":1506555443,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
     },
     {
-      "at": 2.053,
+      "at": 2.095,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":2,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 2.054,
+      "at": 2.096,
       "cause": {
         "kind": "prompt",
         "text": "You ask Claude: “Write the changelog for 2.4”"
       }
     },
     {
-      "at": 3.119,
+      "at": 3.161,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":2,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 3.119,
-      "line": "{\"t\":\"do\",\"id\":190996082,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
+      "at": 3.161,
+      "line": "{\"t\":\"do\",\"id\":1506555444,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
     },
     {
-      "at": 3.119,
+      "at": 3.162,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":3,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 3.12,
+      "at": 3.162,
       "cause": {
         "kind": "prompt",
         "text": "You ask Claude: “Find why the build is slow”"
       }
     },
     {
-      "at": 4.181,
+      "at": 4.219,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"tool_use\",\"mood\":\"calm\",\"busy\":3,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,1,\"edit +1 -1\"]]}"
     },
     {
-      "at": 4.181,
-      "line": "{\"t\":\"do\",\"id\":190996083,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"edit +1 -1\",\"as\":\"arrive\"}}"
+      "at": 4.219,
+      "line": "{\"t\":\"do\",\"id\":1506555445,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"edit +1 -1\",\"as\":\"arrive\"}}"
     },
     {
-      "at": 6.314,
+      "at": 6.35,
       "cause": {
         "kind": "tool",
         "text": "Claude edits src/settings.js"
       }
     },
     {
-      "at": 8,
+      "at": 8.002,
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":3,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,1,\"edit +1 -1\"]]}"
+    },
+    {
+      "at": 8.005,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":2,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 8,
-      "line": "{\"t\":\"do\",\"id\":190996084,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
+      "at": 8.005,
+      "line": "{\"t\":\"do\",\"id\":1506555446,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
     },
     {
-      "at": 8.001,
+      "at": 8.006,
       "cause": {
         "kind": "done",
         "text": "Claude finishes"
       }
     },
     {
-      "at": 8.322,
+      "at": 8.32,
       "effect": "Pixel celebrates",
-      "line": "{\"t\":\"do\",\"id\":190996085,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"the-hand-off\"},\"say\":{},\"mood\":\"pleased\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":1506555447,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"the-hand-off\"},\"say\":{},\"mood\":\"pleased\",\"loops\":2}}"
     },
     {
-      "at": 9.391,
+      "at": 9.381,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"tool_use\",\"mood\":\"calm\",\"busy\":2,\"idle\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,1,\"edit +4\"]]}"
     },
     {
-      "at": 9.391,
-      "line": "{\"t\":\"do\",\"id\":190996086,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"edit +4\",\"as\":\"arrive\"}}"
+      "at": 9.381,
+      "line": "{\"t\":\"do\",\"id\":1506555448,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"edit +4\",\"as\":\"arrive\"}}"
     },
     {
-      "at": 11.526,
+      "at": 11.513,
       "cause": {
         "kind": "tool",
         "text": "Claude edits CHANGELOG.md"
       }
     },
     {
-      "at": 13.236,
+      "at": 13.193,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"idle\":2,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 13.236,
-      "line": "{\"t\":\"do\",\"id\":190996087,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
+      "at": 13.193,
+      "line": "{\"t\":\"do\",\"id\":1506555449,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
     },
     {
-      "at": 13.237,
+      "at": 13.193,
       "cause": {
         "kind": "done",
         "text": "Claude finishes"
       }
     },
     {
-      "at": 13.557,
+      "at": 13.509,
       "effect": "Pixel celebrates",
-      "line": "{\"t\":\"do\",\"id\":190996088,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"the-hand-off-notes\"},\"say\":{},\"mood\":\"happy\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":1506555450,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"the-hand-off-notes\"},\"say\":{},\"mood\":\"happy\",\"loops\":2}}"
     },
     {
-      "at": 15.692,
+      "at": 15.565,
       "cause": {
         "kind": "press",
         "text": "BOOT: the changelog opens"
@@ -141,7 +145,7 @@
       "input": "press"
     },
     {
-      "at": 17.822,
+      "at": 17.699,
       "cause": {
         "kind": "press",
         "text": "BOOT again: the settings page opens"
@@ -149,46 +153,46 @@
       "input": "press"
     },
     {
-      "at": 18.879,
+      "at": 18.766,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"terminal\",\"mood\":\"calm\",\"busy\":1,\"idle\":2,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,1,\"npm run\"]]}"
     },
     {
-      "at": 18.879,
-      "line": "{\"t\":\"do\",\"id\":190996089,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm run\",\"as\":\"arrive\"}}"
+      "at": 18.766,
+      "line": "{\"t\":\"do\",\"id\":1506555451,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm run\",\"as\":\"arrive\"}}"
     },
     {
-      "at": 21.998,
-      "line": "{\"t\":\"do\",\"id\":190996090,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"built\",\"as\":\"built\"}}"
+      "at": 21.967,
+      "line": "{\"t\":\"do\",\"id\":1506555452,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"built\",\"as\":\"built\"}}"
     },
     {
-      "at": 21.998,
+      "at": 21.967,
       "cause": {
         "kind": "tool",
         "text": "Claude: time the build"
       }
     },
     {
-      "at": 23.642,
+      "at": 23.638,
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"busy\":0,\"idle\":3,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 23.642,
-      "line": "{\"t\":\"do\",\"id\":190996091,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
+      "at": 23.638,
+      "line": "{\"t\":\"do\",\"id\":1506555453,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
     },
     {
-      "at": 23.643,
+      "at": 23.639,
       "cause": {
         "kind": "done",
         "text": "Claude finishes"
       }
     },
     {
-      "at": 23.963,
+      "at": 23.96,
       "effect": "Pixel celebrates",
-      "line": "{\"t\":\"do\",\"id\":190996092,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"the-hand-off-build\"},\"say\":{},\"mood\":\"proud\",\"loops\":3}}"
+      "line": "{\"t\":\"do\",\"id\":1506555454,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"the-hand-off-build\"},\"say\":{},\"mood\":\"proud\",\"loops\":3}}"
     },
     {
-      "at": 23.964,
+      "at": 23.961,
       "effect": "Pixel's mood is now proud",
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"proud\",\"busy\":0,\"idle\":3,\"vol\":6,\"when\":[\"day\"]}"
     }
