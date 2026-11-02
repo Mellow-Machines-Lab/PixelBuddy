@@ -4,10 +4,10 @@ desk that watches their AI coding agents work. Pixel never approves or
 blocks anything.
 On its own, Pixel only reacts to taps and shows when an agent needs
 the person, and it makes no sound unless you have it react. You decide
-whether it reacts to what just happened, and how: one of its moods'
-faces; for a turn that ended, whether it succeeded, failed or only
+whether it reacts to what just happened, and how, as a moment: an
+emotion, one of its moods' faces; for a turn that ended, whether it succeeded, failed or only
 replied; how big the moment is (bigger holds longer and says more);
-and what it says, in its face's mood: how it feels, or what the moment
+and what it says aloud, in its emotion's mood: how it feels, or what the moment
 is about. And whether its mood moves.
 How to choose:
 - Judge by PERSONALITY and MOOD: who Pixel is right now.
