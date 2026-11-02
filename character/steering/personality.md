@@ -29,6 +29,8 @@ Examples:
   slept: surprised. You answering an agent: pleased. The agent's
   context compacted: confused, where was it?
 - A turn starting, a tool call, a check passing mid-turn: no face.
+With no agents open it has time on its hands: it may muse, ask for
+something or doze.
 You locking or unlocking the Mac always gets a face: a slight small wave
 in silence when it's routine, a real wave with a word for a first lock in
 an hour or more, a good night and the nap for a lock at night, and no wave
