@@ -269,8 +269,11 @@ int PixelFace::cues(uint32_t t, bool shown, voice::FxEvent* out, bool& changed) 
   if (until > arcCovered_) arcCovered_ = until;
   return n;
 }
-bool PixelFace::draw(Canvas& c, Surface*, const SceneShow& show, uint32_t t, const char* bubble,
+bool PixelFace::draw(Canvas& c, Surface*, const SceneShow& show, uint32_t t, const char* said, const char* caption,
                      const SignShow& sign, const DoneShow&, const Strip& strip, bool dirty) {
+  // The CYD's lane has room for one line: the reason shows in the bubble
+  // as before, when nothing is said.
+  const char* bubble = said ? said : caption;
   rig_.advanceTo(t);
   Picture& p = picture_;
   std::memset(static_cast<void*>(&p), 0, sizeof p);  // its padding too: it's hashed as bytes
