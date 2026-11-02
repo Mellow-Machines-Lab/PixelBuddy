@@ -11,100 +11,100 @@
     },
     {
       "at": 0.001,
-      "line": "{\"t\":\"do\",\"id\":48906635,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
+      "line": "{\"t\":\"do\",\"id\":901517552,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
     },
     {
-      "at": 1.006,
+      "at": 1.01,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 1.008,
+      "at": 1.012,
       "cause": {
         "kind": "prompt",
         "text": "You ask Claude: “Rewrite the search index so it updates as you type”"
       }
     },
     {
-      "at": 1.331,
+      "at": 1.333,
       "effect": "Pixel makes a curious face",
-      "line": "{\"t\":\"do\",\"id\":48906636,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"curious\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":901517553,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"curious\",\"loops\":2}}"
     },
     {
-      "at": 2.399,
+      "at": 2.4,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"tool_use\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,1,\"edit +1 -1\"]]}"
     },
     {
-      "at": 2.399,
-      "line": "{\"t\":\"do\",\"id\":48906637,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"edit +1 -1\",\"as\":\"arrive\"}}"
+      "at": 2.4,
+      "line": "{\"t\":\"do\",\"id\":901517554,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"edit +1 -1\",\"as\":\"arrive\"}}"
     },
     {
-      "at": 4.533,
+      "at": 4.532,
       "cause": {
         "kind": "tool",
         "text": "Claude edits src/search/index.js"
       }
     },
     {
-      "at": 5.601,
+      "at": 5.598,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,2,\"npm test\"]]}"
     },
     {
-      "at": 5.601,
-      "line": "{\"t\":\"do\",\"id\":48906638,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
+      "at": 5.598,
+      "line": "{\"t\":\"do\",\"id\":901517555,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
     },
     {
-      "at": 8.803,
-      "line": "{\"t\":\"do\",\"id\":48906639,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"PASS\",\"as\":\"pass\"}}"
+      "at": 8.789,
+      "line": "{\"t\":\"do\",\"id\":901517556,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"PASS\",\"as\":\"pass\"}}"
     },
     {
-      "at": 8.803,
+      "at": 8.789,
       "cause": {
         "kind": "tool",
         "text": "Claude: run the search tests"
       }
     },
     {
-      "at": 9.124,
+      "at": 9.112,
       "effect": "Pixel makes a hopeful face",
-      "line": "{\"t\":\"do\",\"id\":48906640,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"hopeful\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":901517557,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"hopeful\",\"loops\":2}}"
     },
     {
-      "at": 9.125,
+      "at": 9.114,
       "effect": "Pixel's mood is now engaged",
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"engaged\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,2,\"npm test\"]]}"
     },
     {
-      "at": 11.004,
+      "at": 11.005,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"engaged\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,2,\"npm test\"]]}"
     },
     {
-      "at": 11.898,
+      "at": 11.87,
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"engaged\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 11.898,
-      "line": "{\"t\":\"do\",\"id\":48906641,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
+      "at": 11.87,
+      "line": "{\"t\":\"do\",\"id\":901517558,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
     },
     {
-      "at": 11.899,
+      "at": 11.871,
       "cause": {
         "kind": "done",
         "text": "Claude finishes"
       }
     },
     {
-      "at": 12.221,
+      "at": 12.191,
       "effect": "Pixel celebrates",
-      "line": "{\"t\":\"do\",\"id\":48906642,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"the-new-search-index\"},\"say\":{},\"mood\":\"excited\",\"loops\":4}}"
+      "line": "{\"t\":\"do\",\"id\":901517559,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"the-new-search-index\"},\"say\":{},\"mood\":\"excited\",\"loops\":4}}"
     },
     {
-      "at": 12.222,
+      "at": 12.193,
       "effect": "Pixel's mood is now excited",
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"excited\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     }
   ],
   "face": "gel",
-  "length": 18.62,
+  "length": 18.59,
   "name": "Pixel",
   "script": "2b69d19b42476d53545d6837cc8be521562ce81fa11bcc6e3f720308338d2f51",
   "takes": [],
