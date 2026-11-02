@@ -11,14 +11,14 @@
     },
     {
       "at": 0.001,
-      "line": "{\"t\":\"do\",\"id\":1252199781,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
+      "line": "{\"t\":\"do\",\"id\":1299533601,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
     },
     {
-      "at": 2.005,
+      "at": 2.004,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 2.007,
+      "at": 2.006,
       "cause": {
         "kind": "prompt",
         "text": "You ask Claude: “Add keyboard shortcuts”"
@@ -27,38 +27,38 @@
     {
       "at": 2.327,
       "effect": "Pixel makes a curious face",
-      "line": "{\"t\":\"do\",\"id\":1252199782,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"curious\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":1299533602,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"curious\",\"loops\":2}}"
     },
     {
-      "at": 6.594,
+      "at": 6.596,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,1,\"npm test\"]]}"
     },
     {
-      "at": 6.594,
-      "line": "{\"t\":\"do\",\"id\":1252199783,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"arrive\"}}"
+      "at": 6.596,
+      "line": "{\"t\":\"do\",\"id\":1299533603,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"arrive\"}}"
     },
     {
-      "at": 11.928,
-      "line": "{\"t\":\"do\",\"id\":1252199784,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"PASS\",\"as\":\"pass\"}}"
+      "at": 11.93,
+      "line": "{\"t\":\"do\",\"id\":1299533604,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"PASS\",\"as\":\"pass\"}}"
     },
     {
-      "at": 11.928,
+      "at": 11.93,
       "cause": {
         "kind": "tool",
         "text": "Claude: run the tests"
       }
     },
     {
-      "at": 12.248,
+      "at": 12.25,
       "effect": "Pixel makes a happy face",
-      "line": "{\"t\":\"do\",\"id\":1252199785,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"happy\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":1299533605,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"happy\",\"loops\":2}}"
     },
     {
-      "at": 14.004,
+      "at": 14.002,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,1,\"npm test\"]]}"
     },
     {
-      "at": 18.649,
+      "at": 18.651,
       "cause": {
         "kind": "tap",
         "text": "You poke Pixel"
@@ -66,135 +66,131 @@
       "input": "tap"
     },
     {
-      "at": 24.004,
-      "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,1,\"npm test\"]]}"
-    },
-    {
-      "at": 25,
+      "at": 24.978,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"terminal\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,2,\"deploy\"]]}"
     },
     {
-      "at": 25,
-      "line": "{\"t\":\"do\",\"id\":1252199786,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"deploy\",\"as\":\"launch\"}}"
+      "at": 24.979,
+      "line": "{\"t\":\"do\",\"id\":1299533606,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"deploy\",\"as\":\"launch\"}}"
     },
     {
-      "at": 25.213,
+      "at": 25.192,
       "effect": "Pixel shows that it needs you",
-      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"attn\":{\"agent\":\"claude\",\"project\":\"keyboard-shortcuts\",\"more\":0,\"id\":2026304828},\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
+      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"attn\":{\"agent\":\"claude\",\"project\":\"keyboard-shortcuts\",\"more\":0,\"id\":718902354},\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 36.003,
-      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"attn\":{\"agent\":\"claude\",\"project\":\"keyboard-shortcuts\",\"more\":0,\"id\":2026304828},\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
+      "at": 36.002,
+      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"attn\":{\"agent\":\"claude\",\"project\":\"keyboard-shortcuts\",\"more\":0,\"id\":718902354},\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 38,
+      "at": 37.994,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"]}"
     },
     {
-      "at": 38,
-      "line": "{\"t\":\"do\",\"id\":1252199787,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"FAIL\",\"as\":\"hail\"}}"
+      "at": 37.994,
+      "line": "{\"t\":\"do\",\"id\":1299533607,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"FAIL\",\"as\":\"hail\"}}"
     },
     {
-      "at": 38,
+      "at": 37.994,
       "cause": {
         "kind": "tool_failed",
         "text": "Claude: deploy, and it fails"
       }
     },
     {
-      "at": 38.32,
+      "at": 38.312,
       "effect": "Pixel makes an annoyed face",
-      "line": "{\"t\":\"do\",\"id\":1252199788,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"annoyed\",\"loops\":1}}"
+      "line": "{\"t\":\"do\",\"id\":1299533608,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"annoyed\",\"loops\":1}}"
     },
     {
-      "at": 45.787,
+      "at": 45.777,
       "cause": {
         "kind": "talk",
         "text": "You say “how's it going?”"
       }
     },
     {
-      "at": 45.788,
+      "at": 45.778,
       "effect": "Pixel listens",
-      "line": "{\"t\":\"do\",\"id\":1252199789,\"name\":\"listening\",\"play\":\"now\"}"
+      "line": "{\"t\":\"do\",\"id\":1299533609,\"name\":\"listening\",\"play\":\"now\"}"
     },
     {
-      "at": 47.389,
-      "line": "{\"t\":\"do\",\"id\":1252199790,\"name\":\"stop_listening\",\"play\":\"if_free\"}"
+      "at": 47.378,
+      "line": "{\"t\":\"do\",\"id\":1299533610,\"name\":\"stop_listening\",\"play\":\"if_free\"}"
     },
     {
       "at": 48.004,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"]}"
     },
     {
-      "at": 48.137,
+      "at": 48.125,
       "effect": "Pixel makes a determined face",
-      "line": "{\"t\":\"do\",\"id\":1252199791,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"sign\":\"deploy failed\",\"reply\":\"status\",\"say\":{},\"mood\":\"determined\",\"loops\":3}}"
+      "line": "{\"t\":\"do\",\"id\":1299533611,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"sign\":\"deploy failed\",\"reply\":\"status\",\"say\":{},\"mood\":\"determined\",\"loops\":3}}"
     },
     {
-      "at": 56.672,
+      "at": 56.66,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"terminal\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"],\"calls\":[[0,1,\"deploy\"]]}"
     },
     {
-      "at": 56.672,
-      "line": "{\"t\":\"do\",\"id\":1252199792,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"deploy\",\"as\":\"launch\"}}"
+      "at": 56.66,
+      "line": "{\"t\":\"do\",\"id\":1299533612,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"deploy\",\"as\":\"launch\"}}"
     },
     {
-      "at": 59.999,
+      "at": 60,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"terminal\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"],\"calls\":[[0,1,\"deploy\"]]}"
     },
     {
-      "at": 62,
-      "line": "{\"t\":\"do\",\"id\":1252199793,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"shipped\",\"as\":\"launch\"}}"
+      "at": 61.993,
+      "line": "{\"t\":\"do\",\"id\":1299533613,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"shipped\",\"as\":\"launch\"}}"
     },
     {
-      "at": 62,
+      "at": 61.994,
       "cause": {
         "kind": "tool",
         "text": "Claude: deploy again"
       }
     },
     {
-      "at": 62.321,
+      "at": 62.313,
       "effect": "Pixel makes a happy face",
-      "line": "{\"t\":\"do\",\"id\":1252199794,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"happy\",\"loops\":1}}"
+      "line": "{\"t\":\"do\",\"id\":1299533614,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"deploy passes\",\"say\":{},\"mood\":\"happy\",\"loops\":1}}"
     },
     {
       "at": 63.002,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"terminal\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier2\"],\"calls\":[[0,1,\"deploy\"]]}"
     },
     {
-      "at": 64.003,
+      "at": 64.004,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier2\"],\"calls\":[[0,1,\"deploy\"]]}"
     },
     {
-      "at": 70.427,
+      "at": 70.42,
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 70.427,
-      "line": "{\"t\":\"do\",\"id\":1252199795,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
+      "at": 70.42,
+      "line": "{\"t\":\"do\",\"id\":1299533615,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
     },
     {
-      "at": 70.428,
+      "at": 70.42,
       "cause": {
         "kind": "done",
         "text": "Claude finishes"
       }
     },
     {
-      "at": 70.749,
+      "at": 70.74,
       "effect": "Pixel celebrates",
-      "line": "{\"t\":\"do\",\"id\":1252199796,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":2,\"who\":{\"agent\":\"claude\",\"thread\":\"keyboard-shortcuts\"},\"say\":{},\"mood\":\"excited\",\"loops\":3}}"
+      "line": "{\"t\":\"do\",\"id\":1299533616,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":2,\"who\":{\"agent\":\"claude\",\"thread\":\"keyboard-shortcuts\"},\"say\":{},\"mood\":\"excited\",\"loops\":3}}"
     },
     {
-      "at": 81,
+      "at": 81.001,
       "effect": "Pixel's mood is now proud",
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"proud\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     }
   ],
   "face": "gel",
-  "length": 87,
+  "length": 87.4,
   "name": "Pixel",
   "script": "6ba67f6b0ac8f99f529eda11abf8323e6dae81314fe83056d46c040e114ba6b9",
   "takes": [],

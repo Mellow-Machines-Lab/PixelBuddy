@@ -11,14 +11,14 @@
     },
     {
       "at": 0.001,
-      "line": "{\"t\":\"do\",\"id\":1246484399,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
+      "line": "{\"t\":\"do\",\"id\":45705692,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
     },
     {
-      "at": 1.005,
+      "at": 1.004,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 1.007,
+      "at": 1.006,
       "cause": {
         "kind": "prompt",
         "text": "You ask Claude: “Deploy the docs site”"
@@ -27,7 +27,7 @@
     {
       "at": 1.327,
       "effect": "Pixel makes a calm face",
-      "line": "{\"t\":\"do\",\"id\":1246484400,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"calm\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":45705693,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"calm\",\"loops\":2}}"
     },
     {
       "at": 2.395,
@@ -35,73 +35,73 @@
     },
     {
       "at": 2.395,
-      "line": "{\"t\":\"do\",\"id\":1246484401,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"read\",\"as\":\"arrive\"}}"
+      "line": "{\"t\":\"do\",\"id\":45705694,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"read\",\"as\":\"arrive\"}}"
     },
     {
-      "at": 3.001,
+      "at": 3,
       "cause": {
         "kind": "tool",
         "text": "Claude reads README.md"
       }
     },
     {
-      "at": 4.005,
+      "at": 4.004,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"terminal\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,2,\"npm run\"]]}"
     },
     {
-      "at": 4.22,
+      "at": 4.218,
       "effect": "Pixel shows that it needs you",
-      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"attn\":{\"agent\":\"claude\",\"project\":\"deploy-the-docs\",\"more\":0,\"id\":625753123},\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
+      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"attn\":{\"agent\":\"claude\",\"project\":\"deploy-the-docs\",\"more\":0,\"id\":1423871274},\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
       "at": 15.004,
-      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"attn\":{\"agent\":\"claude\",\"project\":\"deploy-the-docs\",\"more\":0,\"id\":625753123},\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
+      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"attn\":{\"agent\":\"claude\",\"project\":\"deploy-the-docs\",\"more\":0,\"id\":1423871274},\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
       "at": 25.004,
-      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"attn\":{\"agent\":\"claude\",\"project\":\"deploy-the-docs\",\"more\":0,\"id\":625753123},\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
+      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"attn\":{\"agent\":\"claude\",\"project\":\"deploy-the-docs\",\"more\":0,\"id\":1423871274},\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 31.002,
+      "at": 31.006,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 31.002,
-      "line": "{\"t\":\"do\",\"id\":1246484402,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm run\",\"as\":\"land\"}}"
+      "at": 31.006,
+      "line": "{\"t\":\"do\",\"id\":45705695,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm run\",\"as\":\"land\"}}"
     },
     {
-      "at": 31.002,
+      "at": 31.006,
       "cause": {
         "kind": "needs_you",
         "text": "Claude asks to deploy the docs site, and you allow it"
       }
     },
     {
-      "at": 32.003,
+      "at": 31.006,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"]}"
     },
     {
-      "at": 32.175,
+      "at": 32.18,
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 32.175,
-      "line": "{\"t\":\"do\",\"id\":1246484403,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
+      "at": 32.18,
+      "line": "{\"t\":\"do\",\"id\":45705696,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
     },
     {
-      "at": 32.175,
+      "at": 32.18,
       "cause": {
         "kind": "done",
         "text": "Claude finishes"
       }
     },
     {
-      "at": 32.496,
+      "at": 32.5,
       "effect": "Pixel celebrates",
-      "line": "{\"t\":\"do\",\"id\":1246484404,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":1,\"who\":{\"agent\":\"claude\",\"thread\":\"deploy-the-docs\"},\"say\":{},\"mood\":\"excited\",\"loops\":3}}"
+      "line": "{\"t\":\"do\",\"id\":45705697,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":1,\"who\":{\"agent\":\"claude\",\"thread\":\"deploy-the-docs\"},\"say\":{},\"mood\":\"excited\",\"loops\":3}}"
     },
     {
-      "at": 40.999,
+      "at": 41,
       "effect": "Pixel's mood is now proud",
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"proud\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     }

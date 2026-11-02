@@ -6,19 +6,19 @@
       "line": "{\"t\":\"state\",\"base\":\"asleep\",\"mood\":\"calm\",\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 0,
+      "at": 0.001,
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
       "at": 0.001,
-      "line": "{\"t\":\"do\",\"id\":1832117148,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
+      "line": "{\"t\":\"do\",\"id\":861685698,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
     },
     {
       "at": 1.005,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 1.007,
+      "at": 1.006,
       "cause": {
         "kind": "prompt",
         "text": "You ask Claude: “Add keyboard shortcuts to the editor. Keep typing and focus behavior intact.”"
@@ -27,10 +27,10 @@
     {
       "at": 1.327,
       "effect": "Pixel makes a calm face",
-      "line": "{\"t\":\"do\",\"id\":1832117149,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"calm\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":861685699,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"calm\",\"loops\":2}}"
     },
     {
-      "at": 2.927,
+      "at": 2.928,
       "cause": {
         "kind": "tap",
         "text": "You poke Pixel hello"
@@ -40,7 +40,7 @@
     {
       "at": 3.247,
       "effect": "Pixel makes a happy face",
-      "line": "{\"t\":\"do\",\"id\":1832117150,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"poked\",\"say\":{},\"mood\":\"happy\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":861685700,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you poked Pixel\",\"say\":{},\"mood\":\"happy\",\"loops\":2}}"
     },
     {
       "at": 3.248,
@@ -53,99 +53,99 @@
     },
     {
       "at": 5.383,
-      "line": "{\"t\":\"do\",\"id\":1832117151,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"read\",\"as\":\"arrive\"}}"
+      "line": "{\"t\":\"do\",\"id\":861685701,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"read\",\"as\":\"arrive\"}}"
     },
     {
-      "at": 5.997,
+      "at": 5.999,
       "cause": {
         "kind": "tool",
         "text": "Claude reads src/editor.js"
       }
     },
     {
-      "at": 7.001,
+      "at": 7.004,
       "cause": {
         "kind": "talk",
         "text": "You say “You suck at this. You've got to up your game!”"
       }
     },
     {
-      "at": 7.002,
+      "at": 7.004,
       "effect": "Pixel listens",
-      "line": "{\"t\":\"do\",\"id\":1832117152,\"name\":\"listening\",\"play\":\"now\"}"
+      "line": "{\"t\":\"do\",\"id\":861685702,\"name\":\"listening\",\"play\":\"now\"}"
     },
     {
       "at": 8.003,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,1,\"read\"]]}"
     },
     {
-      "at": 9.004,
-      "line": "{\"t\":\"do\",\"id\":1832117153,\"name\":\"stop_listening\",\"play\":\"if_free\"}"
+      "at": 9.136,
+      "line": "{\"t\":\"do\",\"id\":861685703,\"name\":\"stop_listening\",\"play\":\"if_free\"}"
     },
     {
-      "at": 9.805,
+      "at": 9.935,
       "effect": "Pixel makes a determined face",
-      "line": "{\"t\":\"do\",\"id\":1832117154,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reply\":\"ouch\",\"say\":{},\"mood\":\"determined\",\"loops\":3}}"
+      "line": "{\"t\":\"do\",\"id\":861685704,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reply\":\"ouch\",\"say\":{},\"mood\":\"determined\",\"loops\":3}}"
     },
     {
-      "at": 9.806,
+      "at": 9.936,
       "effect": "Pixel's mood is now determined",
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,1,\"read\"]]}"
     },
     {
-      "at": 11.939,
+      "at": 11.998,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"analyzing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,2,\"read\"]]}"
     },
     {
-      "at": 12.579,
+      "at": 12.639,
       "cause": {
         "kind": "tool",
         "text": "Claude reads src/commands.js"
       }
     },
     {
-      "at": 14.18,
+      "at": 14.239,
       "cause": {
         "kind": "talk",
         "text": "You say “You really suck. Come on, get working!”"
       }
     },
     {
-      "at": 14.181,
+      "at": 14.239,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,2,\"read\"]]}"
     },
     {
-      "at": 14.181,
+      "at": 14.24,
       "effect": "Pixel listens",
-      "line": "{\"t\":\"do\",\"id\":1832117155,\"name\":\"listening\",\"play\":\"now\"}"
+      "line": "{\"t\":\"do\",\"id\":861685705,\"name\":\"listening\",\"play\":\"now\"}"
     },
     {
-      "at": 15.782,
-      "line": "{\"t\":\"do\",\"id\":1832117156,\"name\":\"stop_listening\",\"play\":\"if_free\"}"
+      "at": 15.841,
+      "line": "{\"t\":\"do\",\"id\":861685706,\"name\":\"stop_listening\",\"play\":\"if_free\"}"
     },
     {
-      "at": 16.581,
+      "at": 16.641,
       "effect": "Pixel makes a grumpy face",
-      "line": "{\"t\":\"do\",\"id\":1832117157,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reply\":\"ouch\",\"say\":{},\"mood\":\"grumpy\",\"loops\":1}}"
+      "line": "{\"t\":\"do\",\"id\":861685707,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reply\":\"ouch\",\"say\":{},\"mood\":\"grumpy\",\"loops\":1}}"
     },
     {
-      "at": 16.581,
+      "at": 16.642,
       "effect": "Pixel's mood is now grumpy",
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"grumpy\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,2,\"read\"]]}"
     },
     {
-      "at": 18.715,
+      "at": 18.776,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"analyzing\",\"mood\":\"grumpy\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,3,\"read\"]]}"
     },
     {
-      "at": 19.357,
+      "at": 19.424,
       "cause": {
         "kind": "tool",
         "text": "Claude reads src/useShortcuts.js"
       }
     },
     {
-      "at": 20.956,
+      "at": 20.997,
       "cause": {
         "kind": "tap",
         "text": "You poke Pixel three times while it's busy"
@@ -153,11 +153,11 @@
       "input": "tap"
     },
     {
-      "at": 20.958,
+      "at": 20.998,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"grumpy\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,3,\"read\"]]}"
     },
     {
-      "at": 21.378,
+      "at": 21.426,
       "cause": {
         "kind": "tap",
         "text": "You poke Pixel"
@@ -165,7 +165,7 @@
       "input": "tap"
     },
     {
-      "at": 21.805,
+      "at": 21.855,
       "cause": {
         "kind": "tap",
         "text": "You poke Pixel"
@@ -173,32 +173,32 @@
       "input": "tap"
     },
     {
-      "at": 22.127,
+      "at": 22.178,
       "effect": "Pixel makes an irritated face",
-      "line": "{\"t\":\"do\",\"id\":1832117158,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"poked x3\",\"say\":{},\"mood\":\"irritated\",\"loops\":1}}"
+      "line": "{\"t\":\"do\",\"id\":861685708,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you poked Pixel x3\",\"say\":{},\"mood\":\"irritated\",\"loops\":1}}"
     },
     {
-      "at": 22.128,
+      "at": 22.179,
       "effect": "Pixel's mood is now irritated",
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"irritated\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,3,\"read\"]]}"
     },
     {
-      "at": 24.263,
+      "at": 24.314,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"tool_use\",\"mood\":\"irritated\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,4,\"edit +25 -5\"]]}"
     },
     {
-      "at": 25.865,
-      "line": "{\"t\":\"do\",\"id\":1832117159,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"edit +25 -5\",\"as\":\"land\"}}"
+      "at": 25.916,
+      "line": "{\"t\":\"do\",\"id\":861685709,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"edit +25 -5\",\"as\":\"land\"}}"
     },
     {
-      "at": 25.866,
+      "at": 25.916,
       "cause": {
         "kind": "tool",
         "text": "Claude edits src/useShortcuts.js"
       }
     },
     {
-      "at": 27.997,
+      "at": 27.999,
       "cause": {
         "kind": "tap",
         "text": "A poke doesn't undo a grumpy mood"
@@ -206,110 +206,110 @@
       "input": "tap"
     },
     {
-      "at": 27.999,
+      "at": 28,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"irritated\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,4,\"edit +25 -5\"]]}"
     },
     {
-      "at": 28.32,
+      "at": 28.322,
       "effect": "Pixel makes a grumpy face",
-      "line": "{\"t\":\"do\",\"id\":1832117160,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"poked\",\"say\":{},\"mood\":\"grumpy\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":861685710,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you poked Pixel\",\"say\":{},\"mood\":\"grumpy\",\"loops\":2}}"
     },
     {
-      "at": 28.322,
+      "at": 28.325,
       "effect": "Pixel's mood is now grumpy",
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"grumpy\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,4,\"edit +25 -5\"]]}"
     },
     {
-      "at": 30.99,
+      "at": 30.994,
       "cause": {
         "kind": "talk",
         "text": "You say “Still not done? Come on, Pixel!”"
       }
     },
     {
-      "at": 30.991,
+      "at": 30.996,
       "effect": "Pixel listens",
-      "line": "{\"t\":\"do\",\"id\":1832117161,\"name\":\"listening\",\"play\":\"now\"}"
+      "line": "{\"t\":\"do\",\"id\":861685711,\"name\":\"listening\",\"play\":\"now\"}"
     },
     {
-      "at": 32.003,
+      "at": 32.004,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"grumpy\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"],\"calls\":[[0,4,\"edit +25 -5\"]]}"
     },
     {
-      "at": 32.593,
-      "line": "{\"t\":\"do\",\"id\":1832117162,\"name\":\"stop_listening\",\"play\":\"if_free\"}"
+      "at": 32.599,
+      "line": "{\"t\":\"do\",\"id\":861685712,\"name\":\"stop_listening\",\"play\":\"if_free\"}"
     },
     {
-      "at": 33.395,
+      "at": 33.399,
       "effect": "Pixel makes a whiny face",
-      "line": "{\"t\":\"do\",\"id\":1832117163,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"sign\":\"just started\",\"reply\":\"status\",\"say\":{},\"mood\":\"whiny\",\"loops\":3}}"
+      "line": "{\"t\":\"do\",\"id\":861685713,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"sign\":\"just started\",\"reply\":\"status\",\"say\":{},\"mood\":\"whiny\",\"loops\":3}}"
     },
     {
-      "at": 33.398,
+      "at": 33.402,
       "effect": "Pixel's mood is now sad",
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"sad\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"],\"calls\":[[0,4,\"edit +25 -5\"]]}"
     },
     {
-      "at": 37.666,
+      "at": 37.669,
       "cause": {
         "kind": "talk",
         "text": "You say “Hey, I was too harsh. You're doing fine. Take your time.”"
       }
     },
     {
-      "at": 37.667,
+      "at": 37.67,
       "effect": "Pixel listens",
-      "line": "{\"t\":\"do\",\"id\":1832117164,\"name\":\"listening\",\"play\":\"now\"}"
+      "line": "{\"t\":\"do\",\"id\":861685714,\"name\":\"listening\",\"play\":\"now\"}"
     },
     {
-      "at": 40.871,
-      "line": "{\"t\":\"do\",\"id\":1832117165,\"name\":\"stop_listening\",\"play\":\"if_free\"}"
+      "at": 40.873,
+      "line": "{\"t\":\"do\",\"id\":861685715,\"name\":\"stop_listening\",\"play\":\"if_free\"}"
     },
     {
-      "at": 41.673,
+      "at": 41.676,
       "effect": "Pixel makes a calm face",
-      "line": "{\"t\":\"do\",\"id\":1832117166,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reply\":\"thanks\",\"say\":{},\"mood\":\"calm\",\"loops\":3}}"
+      "line": "{\"t\":\"do\",\"id\":861685716,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reply\":\"thanks\",\"say\":{},\"mood\":\"calm\",\"loops\":3}}"
     },
     {
-      "at": 41.675,
+      "at": 41.679,
       "effect": "Pixel's mood is now calm",
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"],\"calls\":[[0,4,\"edit +25 -5\"]]}"
     },
     {
-      "at": 43.814,
+      "at": 43.816,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"],\"calls\":[[0,5,\"npm test\"]]}"
     },
     {
-      "at": 43.815,
-      "line": "{\"t\":\"do\",\"id\":1832117167,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
+      "at": 43.816,
+      "line": "{\"t\":\"do\",\"id\":861685717,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
     },
     {
-      "at": 47.002,
-      "line": "{\"t\":\"do\",\"id\":1832117168,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"FAIL\",\"as\":\"hail\"}}"
+      "at": 47.006,
+      "line": "{\"t\":\"do\",\"id\":861685718,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"FAIL\",\"as\":\"hail\"}}"
     },
     {
-      "at": 47.002,
+      "at": 47.007,
       "cause": {
         "kind": "tool_failed",
         "text": "Claude: run the shortcut tests, and it fails"
       }
     },
     {
-      "at": 47.326,
+      "at": 47.329,
       "effect": "Pixel makes an annoyed face",
-      "line": "{\"t\":\"do\",\"id\":1832117169,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"annoyed\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":861685719,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"tests failed\",\"say\":{},\"mood\":\"annoyed\",\"loops\":2}}"
     },
     {
-      "at": 47.329,
+      "at": 47.331,
       "effect": "Pixel's mood is now annoyed",
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"annoyed\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"],\"calls\":[[0,5,\"npm test\"]]}"
     },
     {
-      "at": 49.003,
+      "at": 49.004,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"annoyed\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"],\"calls\":[[0,5,\"npm test\"]]}"
     },
     {
-      "at": 49.997,
+      "at": 49.998,
       "cause": {
         "kind": "talk",
         "text": "You say “Try checking the editable parent. You can do this.”"
@@ -318,16 +318,16 @@
     {
       "at": 49.999,
       "effect": "Pixel listens",
-      "line": "{\"t\":\"do\",\"id\":1832117170,\"name\":\"listening\",\"play\":\"now\"}"
+      "line": "{\"t\":\"do\",\"id\":861685720,\"name\":\"listening\",\"play\":\"now\"}"
     },
     {
-      "at": 51.602,
-      "line": "{\"t\":\"do\",\"id\":1832117171,\"name\":\"stop_listening\",\"play\":\"if_free\"}"
+      "at": 51.604,
+      "line": "{\"t\":\"do\",\"id\":861685721,\"name\":\"stop_listening\",\"play\":\"if_free\"}"
     },
     {
-      "at": 52.402,
+      "at": 52.401,
       "effect": "Pixel makes a determined face",
-      "line": "{\"t\":\"do\",\"id\":1832117172,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reply\":\"yes\",\"say\":{},\"mood\":\"determined\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":861685722,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reply\":\"yes\",\"say\":{},\"mood\":\"determined\",\"loops\":2}}"
     },
     {
       "at": 52.403,
@@ -335,83 +335,83 @@
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"],\"calls\":[[0,5,\"npm test\"]]}"
     },
     {
-      "at": 54.541,
+      "at": 54.538,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"tool_use\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"],\"calls\":[[0,6,\"edit +7 -4\"]]}"
     },
     {
-      "at": 56.145,
-      "line": "{\"t\":\"do\",\"id\":1832117173,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"edit +7 -4\",\"as\":\"land\"}}"
+      "at": 56.141,
+      "line": "{\"t\":\"do\",\"id\":861685723,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"edit +7 -4\",\"as\":\"land\"}}"
     },
     {
-      "at": 56.146,
+      "at": 56.141,
       "cause": {
         "kind": "tool",
         "text": "Claude edits src/useShortcuts.js"
       }
     },
     {
-      "at": 57.749,
+      "at": 57.743,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"],\"calls\":[[0,7,\"npm test\"]]}"
     },
     {
-      "at": 57.749,
-      "line": "{\"t\":\"do\",\"id\":1832117174,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
+      "at": 57.743,
+      "line": "{\"t\":\"do\",\"id\":861685724,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
     },
     {
-      "at": 59.999,
+      "at": 60.002,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier1\"],\"calls\":[[0,7,\"npm test\"]]}"
     },
     {
-      "at": 60.95,
-      "line": "{\"t\":\"do\",\"id\":1832117175,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"PASS\",\"as\":\"pass\"}}"
+      "at": 60.947,
+      "line": "{\"t\":\"do\",\"id\":861685725,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"PASS\",\"as\":\"pass\"}}"
     },
     {
-      "at": 60.951,
+      "at": 60.948,
       "cause": {
         "kind": "tool",
         "text": "Claude: run the shortcut tests again"
       }
     },
     {
-      "at": 61.273,
+      "at": 61.27,
       "effect": "Pixel makes a happy face",
-      "line": "{\"t\":\"do\",\"id\":1832117176,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"happy\",\"loops\":1}}"
+      "line": "{\"t\":\"do\",\"id\":861685726,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"tests pass again\",\"say\":{},\"mood\":\"happy\",\"loops\":1}}"
     },
     {
-      "at": 61.275,
+      "at": 61.272,
       "effect": "Pixel's mood is now happy",
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier2\"],\"calls\":[[0,7,\"npm test\"]]}"
     },
     {
-      "at": 63.003,
+      "at": 63.004,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier2\"],\"calls\":[[0,7,\"npm test\"]]}"
     },
     {
-      "at": 63.945,
+      "at": 63.942,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"terminal\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier2\"],\"calls\":[[0,8,\"npm run\"]]}"
     },
     {
-      "at": 64.162,
+      "at": 64.157,
       "effect": "Pixel shows that it needs you",
-      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"happy\",\"attn\":{\"agent\":\"claude\",\"project\":\"keyboard-shortcuts\",\"more\":0,\"id\":618821057},\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
+      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"happy\",\"attn\":{\"agent\":\"claude\",\"project\":\"keyboard-shortcuts\",\"more\":0,\"id\":1489815105},\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 72.699,
+      "at": 72.691,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier2\"]}"
     },
     {
-      "at": 72.699,
-      "line": "{\"t\":\"do\",\"id\":1832117177,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm run\",\"as\":\"land\"}}"
+      "at": 72.691,
+      "line": "{\"t\":\"do\",\"id\":861685727,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm run\",\"as\":\"land\"}}"
     },
     {
-      "at": 72.699,
+      "at": 72.692,
       "cause": {
         "kind": "needs_you",
         "text": "Claude asks to install the browser test runner, and you allow it"
       }
     },
     {
-      "at": 74.301,
+      "at": 74.292,
       "cause": {
         "kind": "tap",
         "text": "One little reassuring poke"
@@ -419,23 +419,23 @@
       "input": "tap"
     },
     {
-      "at": 74.624,
+      "at": 74.616,
       "effect": "Pixel makes a happy face",
-      "line": "{\"t\":\"do\",\"id\":1832117178,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"poked\",\"say\":{},\"mood\":\"happy\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":861685728,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you poked Pixel\",\"say\":{},\"mood\":\"happy\",\"loops\":2}}"
     },
     {
-      "at": 76.762,
+      "at": 76.753,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"terminal\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier2\"],\"calls\":[[0,1,\"npm run\"]]}"
     },
     {
-      "at": 84.002,
+      "at": 83.999,
       "cause": {
         "kind": "tool",
         "text": "Claude: run the browser checks"
       }
     },
     {
-      "at": 85.603,
+      "at": 85.599,
       "cause": {
         "kind": "tap",
         "text": "Green checks! You poke Pixel to celebrate"
@@ -443,16 +443,16 @@
       "input": "tap"
     },
     {
-      "at": 85.605,
+      "at": 85.599,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier2\"],\"calls\":[[0,1,\"npm run\"]]}"
     },
     {
-      "at": 85.926,
+      "at": 85.92,
       "effect": "Pixel makes an excited face",
-      "line": "{\"t\":\"do\",\"id\":1832117179,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"poked\",\"say\":{},\"mood\":\"excited\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":861685729,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you poked Pixel\",\"say\":{},\"mood\":\"excited\",\"loops\":2}}"
     },
     {
-      "at": 85.928,
+      "at": 85.921,
       "effect": "Pixel's mood is now excited",
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"excited\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier2\"],\"calls\":[[0,1,\"npm run\"]]}"
     },
@@ -462,10 +462,10 @@
     },
     {
       "at": 88.002,
-      "line": "{\"t\":\"do\",\"id\":1832117180,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"helper\",\"as\":\"helper\"}}"
+      "line": "{\"t\":\"do\",\"id\":861685730,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"helper\",\"as\":\"helper\"}}"
     },
     {
-      "at": 88.217,
+      "at": 88.218,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"delegating\",\"mood\":\"excited\",\"busy\":1,\"helpers\":1,\"vol\":6,\"when\":[\"day\",\"tier2\"],\"calls\":[[0,2,\"helper\"]]}"
     },
     {
@@ -476,30 +476,30 @@
       }
     },
     {
-      "at": 91.422,
+      "at": 91.42,
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"excited\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 91.422,
-      "line": "{\"t\":\"do\",\"id\":1832117181,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
+      "at": 91.42,
+      "line": "{\"t\":\"do\",\"id\":861685731,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
     },
     {
-      "at": 91.425,
+      "at": 91.422,
       "cause": {
         "kind": "done",
         "text": "Claude waits for its reviewer"
       }
     },
     {
-      "at": 93.563,
+      "at": 93.557,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"terminal\",\"mood\":\"excited\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier2\"],\"calls\":[[0,1,\"git diff\"]]}"
     },
     {
-      "at": 93.563,
-      "line": "{\"t\":\"do\",\"id\":1832117182,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"git diff\",\"as\":\"arrive\"}}"
+      "at": 93.557,
+      "line": "{\"t\":\"do\",\"id\":861685732,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"git diff\",\"as\":\"arrive\"}}"
     },
     {
-      "at": 94.098,
+      "at": 94.093,
       "cause": {
         "kind": "tool",
         "text": "The reviewer: read the change"
@@ -510,23 +510,23 @@
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"excited\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier2\"],\"calls\":[[0,1,\"git diff\"]]}"
     },
     {
-      "at": 98.366,
-      "line": "{\"t\":\"do\",\"id\":1832117183,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"back\",\"as\":\"back\"}}"
+      "at": 98.36,
+      "line": "{\"t\":\"do\",\"id\":861685733,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"back\",\"as\":\"back\"}}"
     },
     {
-      "at": 98.367,
+      "at": 98.36,
       "cause": {
         "kind": "tool",
         "text": "The reviewer reports back"
       }
     },
     {
-      "at": 98.689,
+      "at": 98.681,
       "effect": "Pixel makes an engaged face",
-      "line": "{\"t\":\"do\",\"id\":1832117184,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"engaged\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":861685734,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"engaged\",\"loops\":2}}"
     },
     {
-      "at": 98.692,
+      "at": 98.681,
       "effect": "Pixel's mood is now engaged",
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"engaged\",\"busy\":1,\"vol\":6,\"when\":[\"day\",\"tier2\"],\"calls\":[[0,1,\"git diff\"]]}"
     },
@@ -535,19 +535,19 @@
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"engaged\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 104.004,
+      "at": 104.005,
       "cause": {
         "kind": "done",
         "text": "Claude finishes"
       }
     },
     {
-      "at": 104.325,
+      "at": 104.326,
       "effect": "Pixel celebrates",
-      "line": "{\"t\":\"do\",\"id\":1832117185,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"keyboard-shortcuts\"},\"say\":{},\"mood\":\"proud\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":861685735,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"keyboard-shortcuts\"},\"say\":{},\"mood\":\"proud\",\"loops\":2}}"
     },
     {
-      "at": 104.328,
+      "at": 104.327,
       "effect": "Pixel's mood is now proud",
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"proud\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     }
