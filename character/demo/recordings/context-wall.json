@@ -6,35 +6,35 @@
       "line": "{\"t\":\"state\",\"base\":\"asleep\",\"mood\":\"calm\",\"busy\":0,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 0,
+      "at": 0.001,
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"calm\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 0,
-      "line": "{\"t\":\"do\",\"id\":1790202096,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
+      "at": 0.001,
+      "line": "{\"t\":\"do\",\"id\":382918982,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
     },
     {
-      "at": 1.004,
+      "at": 1.007,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"]}"
     },
     {
-      "at": 1.006,
+      "at": 1.009,
       "cause": {
         "kind": "prompt",
         "text": "You ask Claude: “The invoice tests for discount codes and sales tax fail. Make them pass.”"
       }
     },
     {
-      "at": 1.326,
+      "at": 1.321,
       "effect": "Pixel makes a calm face",
-      "line": "{\"t\":\"do\",\"id\":1790202097,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"calm\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":382918983,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"calm\",\"loops\":2}}"
     },
     {
-      "at": 2.391,
+      "at": 2.389,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"analyzing\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,1,\"read\"]]}"
     },
     {
-      "at": 3.003,
+      "at": 2.998,
       "cause": {
         "kind": "tool",
         "text": "Claude reads test/invoice.test.js"
@@ -52,136 +52,128 @@
       }
     },
     {
-      "at": 5.714,
-      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,3,\"npm test\"]]}"
+      "at": 5.716,
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,3,\"npm test\"]],\"wact\":[\"tests\",\"running tests\",1]}"
     },
     {
-      "at": 5.714,
-      "line": "{\"t\":\"do\",\"id\":1790202098,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
+      "at": 8.382,
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"calm\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,3,\"npm test\"]],\"wact\":[\"tests\",\"FAIL\",1,\"f\"]}"
     },
     {
-      "at": 8.37,
-      "line": "{\"t\":\"do\",\"id\":1790202099,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"FAIL\",\"as\":\"hail\"}}"
-    },
-    {
-      "at": 8.37,
+      "at": 8.382,
       "cause": {
         "kind": "tool_failed",
         "text": "Claude: run the invoice tests, and it fails"
       }
     },
     {
-      "at": 8.691,
+      "at": 8.701,
       "effect": "Pixel makes a determined face",
-      "line": "{\"t\":\"do\",\"id\":1790202100,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"tests failed\",\"say\":{},\"mood\":\"determined\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":382918984,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"determined\",\"loops\":2}}"
     },
     {
-      "at": 8.692,
+      "at": 8.702,
       "effect": "Pixel's mood is now determined",
-      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,3,\"npm test\"]]}"
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,3,\"npm test\"]],\"wact\":[\"tests\",\"FAIL\",1,\"f\"]}"
     },
     {
-      "at": 9.76,
-      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,4,\"edit +15 -3\"]]}"
+      "at": 9.769,
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,4,\"edit +15 -3\"]],\"wact\":[\"tests\",\"FAIL\",1,\"f\"]}"
     },
     {
-      "at": 10.006,
-      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"tool_use\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,4,\"edit +15 -3\"]]}"
+      "at": 10.009,
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"tool_use\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,4,\"edit +15 -3\"]],\"wact\":[\"tests\",\"FAIL\",1,\"f\"]}"
     },
     {
-      "at": 11.357,
+      "at": 11.369,
       "cause": {
         "kind": "tool",
         "text": "Claude edits src/invoice.js"
       }
     },
     {
-      "at": 12.423,
-      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,5,\"npm test\"]]}"
+      "at": 12.435,
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,5,\"npm test\"]],\"wact\":[\"tests\",\"running tests\",0]}"
     },
     {
-      "at": 12.424,
-      "line": "{\"t\":\"do\",\"id\":1790202101,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
+      "at": 14.998,
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,5,\"npm test\"]],\"wact\":[\"tests\",\"FAIL\",0,\"f\"]}"
     },
     {
-      "at": 14.999,
-      "line": "{\"t\":\"do\",\"id\":1790202102,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"FAIL\",\"as\":\"hail\"}}"
-    },
-    {
-      "at": 14.999,
+      "at": 14.998,
       "cause": {
         "kind": "tool_failed",
         "text": "Claude: run the invoice tests, and it fails"
       }
     },
     {
-      "at": 17.002,
+      "at": 17.005,
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,5,\"npm test\"]],\"wact\":[\"tests\",\"FAIL\",0,\"f\"]}"
+    },
+    {
+      "at": 18,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,5,\"npm test\"]]}"
     },
     {
-      "at": 19.789,
+      "at": 19.798,
       "effect": "Pixel shows that the context was compacted",
-      "line": "{\"t\":\"do\",\"id\":1790202103,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"compacted\"}}"
+      "line": "{\"t\":\"do\",\"id\":382918985,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"compacted\"}}"
     },
     {
-      "at": 19.789,
-      "line": "{\"t\":\"do\",\"id\":1790202104,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"context\",\"as\":\"compact\"}}"
+      "at": 19.798,
+      "line": "{\"t\":\"do\",\"id\":382918986,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"context\",\"as\":\"compact\"}}"
     },
     {
-      "at": 19.789,
+      "at": 19.799,
       "cause": {
         "kind": "compact",
         "text": "Claude's context is full: it compacts the conversation"
       }
     },
     {
-      "at": 20.11,
+      "at": 20.115,
       "effect": "Pixel makes a confused face",
-      "line": "{\"t\":\"do\",\"id\":1790202105,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"confused\",\"loops\":1}}"
+      "line": "{\"t\":\"do\",\"id\":382918987,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"confused\",\"loops\":1}}"
     },
     {
-      "at": 22.237,
+      "at": 22.249,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"tool_use\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,6,\"edit +7 -4\"]]}"
     },
     {
-      "at": 23.836,
+      "at": 23.848,
       "cause": {
         "kind": "tool",
         "text": "Claude edits src/invoice.js"
       }
     },
     {
-      "at": 24.903,
-      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,7,\"npm test\"]]}"
+      "at": 24.916,
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,7,\"npm test\"]],\"wact\":[\"tests\",\"running tests\",0]}"
     },
     {
-      "at": 24.904,
-      "line": "{\"t\":\"do\",\"id\":1790202106,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"npm test\",\"as\":\"cross\"}}"
+      "at": 27.581,
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"determined\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,7,\"npm test\"]],\"wact\":[\"tests\",\"PASS\",0,\"p\"]}"
     },
     {
-      "at": 27.57,
-      "line": "{\"t\":\"do\",\"id\":1790202107,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"PASS\",\"as\":\"pass\"}}"
-    },
-    {
-      "at": 27.57,
+      "at": 27.582,
       "cause": {
         "kind": "tool",
         "text": "Claude: run the invoice tests"
       }
     },
     {
-      "at": 27.89,
+      "at": 27.903,
       "effect": "Pixel makes a happy face",
-      "line": "{\"t\":\"do\",\"id\":1790202108,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"tests pass again\",\"say\":{},\"mood\":\"happy\",\"loops\":1}}"
+      "line": "{\"t\":\"do\",\"id\":382918988,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"happy\",\"loops\":1}}"
     },
     {
-      "at": 27.891,
+      "at": 27.904,
       "effect": "Pixel's mood is now happy",
-      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,7,\"npm test\"]]}"
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,7,\"npm test\"]],\"wact\":[\"tests\",\"PASS\",0,\"p\"]}"
     },
     {
-      "at": 30.007,
-      "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,7,\"npm test\"]]}"
+      "at": 30.001,
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"day\"],\"calls\":[[0,7,\"npm test\"]],\"wact\":[\"tests\",\"PASS\",0,\"p\"]}"
     },
     {
       "at": 30.999,
@@ -189,7 +181,7 @@
     },
     {
       "at": 30.999,
-      "line": "{\"t\":\"do\",\"id\":1790202109,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
+      "line": "{\"t\":\"do\",\"id\":382918989,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
     },
     {
       "at": 31,
@@ -199,18 +191,18 @@
       }
     },
     {
-      "at": 31.32,
+      "at": 31.315,
       "effect": "Pixel celebrates",
-      "line": "{\"t\":\"do\",\"id\":1790202110,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"invoice-discounts-and-tax\"},\"say\":{},\"mood\":\"excited\",\"loops\":3}}"
+      "line": "{\"t\":\"do\",\"id\":382918990,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"invoice-discounts-and-tax\"},\"say\":{},\"mood\":\"excited\",\"loops\":3}}"
     },
     {
-      "at": 31.321,
+      "at": 31.316,
       "effect": "Pixel's mood is now proud",
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"proud\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"day\"]}"
     }
   ],
   "face": "gel",
-  "length": 37.72,
+  "length": 37.71,
   "name": "Pixel",
   "script": "8bb18baf3c8b3f50c9135b5b2446b7f2a2fd2c8c4f9d2addc361415ee7d5a2b3",
   "takes": [],
