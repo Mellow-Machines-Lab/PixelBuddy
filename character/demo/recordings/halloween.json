@@ -11,31 +11,31 @@
     },
     {
       "at": 0.001,
-      "line": "{\"t\":\"do\",\"id\":1801289531,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
+      "line": "{\"t\":\"do\",\"id\":1512552280,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
     },
     {
       "at": 0.001,
       "effect": "Pixel stretches and yawns",
-      "line": "{\"t\":\"do\",\"id\":1801289532,\"name\":\"wake_up\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"sign\":\"Happy Halloween!\"}}"
+      "line": "{\"t\":\"do\",\"id\":1512552281,\"name\":\"wake_up\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"sign\":\"Happy Halloween!\"}}"
     },
     {
-      "at": 0.85,
+      "at": 0.852,
       "cause": {
         "kind": "back",
         "text": "You come back to the Mac after 10 hours away"
       }
     },
     {
-      "at": 0.851,
+      "at": 0.853,
       "line": "{\"t\":\"state\",\"base\":\"asleep\",\"mood\":\"calm\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"evening\",\"halloween\",\"tier5\"]}"
     },
     {
-      "at": 1.172,
+      "at": 1.17,
       "effect": "Pixel stretches and yawns",
-      "line": "{\"t\":\"do\",\"id\":1801289533,\"name\":\"wake_up\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you were away 10 h\",\"say\":{},\"mood\":\"mischievous\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":1512552282,\"name\":\"wake_up\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you were away 10 h\",\"say\":{},\"mood\":\"mischievous\",\"loops\":2}}"
     },
     {
-      "at": 1.173,
+      "at": 1.171,
       "effect": "Pixel's mood is now happy",
       "line": "{\"t\":\"state\",\"base\":\"asleep\",\"mood\":\"happy\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"evening\",\"halloween\",\"tier5\"]}"
     },
@@ -45,7 +45,7 @@
     },
     {
       "at": 7.572,
-      "line": "{\"t\":\"do\",\"id\":1801289534,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"new_task\"}}"
+      "line": "{\"t\":\"do\",\"id\":1512552283,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"new_task\"}}"
     },
     {
       "at": 7.574,
@@ -55,35 +55,35 @@
       }
     },
     {
-      "at": 8.639,
+      "at": 8.641,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"tool_use\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"evening\",\"halloween\"],\"calls\":[[0,1,\"edit +1 -1\"]]}"
     },
     {
-      "at": 10.764,
+      "at": 10.773,
       "cause": {
         "kind": "tool",
         "text": "Claude edits src/theme.css"
       }
     },
     {
-      "at": 12.467,
+      "at": 12.476,
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"happy\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"evening\",\"halloween\"]}"
     },
     {
-      "at": 12.468,
-      "line": "{\"t\":\"do\",\"id\":1801289535,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
+      "at": 12.476,
+      "line": "{\"t\":\"do\",\"id\":1512552284,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
     },
     {
-      "at": 12.469,
+      "at": 12.477,
       "cause": {
         "kind": "done",
         "text": "Claude finishes"
       }
     },
     {
-      "at": 12.789,
+      "at": 12.791,
       "effect": "Pixel celebrates",
-      "line": "{\"t\":\"do\",\"id\":1801289536,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"halloween\"},\"say\":{},\"mood\":\"mischievous\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":1512552285,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"halloween\"},\"say\":{},\"mood\":\"mischievous\",\"loops\":2}}"
     }
   ],
   "face": "gel",
