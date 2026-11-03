@@ -26,3 +26,5 @@
 - [carry_on] onward!
 - [essay] reading...
 - {words}
+- [grew] level up!
+- [grew] i grew!
