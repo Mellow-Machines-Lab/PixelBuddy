@@ -11,107 +11,112 @@
     },
     {
       "at": 0.001,
-      "line": "{\"t\":\"do\",\"id\":1859456434,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\"}}"
+      "line": "{\"t\":\"do\",\"id\":1203830431,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\",\"reason\":\"new claude thread\"}}"
     },
     {
-      "at": 2.134,
+      "at": 2.008,
       "cause": {
         "kind": "back",
         "text": "You sit down at the Mac in the morning"
       }
     },
     {
-      "at": 2.135,
+      "at": 2.009,
       "line": "{\"t\":\"state\",\"base\":\"asleep\",\"mood\":\"calm\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"night\",\"tier5\"]}"
     },
     {
-      "at": 2.455,
-      "effect": "Pixel stretches and yawns",
-      "line": "{\"t\":\"do\",\"id\":1859456435,\"name\":\"wake_up\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you were away 10 h\",\"greeting\":true,\"say\":{},\"mood\":\"happy\",\"loops\":2}}"
+      "at": 2.009,
+      "effect": "Pixel reacts",
+      "line": "{\"t\":\"do\",\"id\":1203830432,\"name\":\"react\",\"play\":\"if_free\",\"args\":{\"reason\":\"quiet for 10 min\"}}"
     },
     {
-      "at": 2.456,
+      "at": 2.332,
+      "effect": "Pixel stretches and yawns",
+      "line": "{\"t\":\"do\",\"id\":1203830433,\"name\":\"wake_up\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you were away 10 h\",\"greeting\":true,\"say\":{},\"mood\":\"happy\",\"loops\":2}}"
+    },
+    {
+      "at": 2.333,
       "effect": "Pixel's mood is now happy",
       "line": "{\"t\":\"state\",\"base\":\"asleep\",\"mood\":\"happy\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"night\",\"tier5\"]}"
     },
     {
-      "at": 10.884,
+      "at": 10.868,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"night\"]}"
     },
     {
-      "at": 10.884,
-      "line": "{\"t\":\"do\",\"id\":1859456436,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"new_task\"}}"
+      "at": 10.868,
+      "line": "{\"t\":\"do\",\"id\":1203830434,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"new_task\",\"reason\":\"claude started\"}}"
     },
     {
-      "at": 10.886,
+      "at": 10.87,
       "cause": {
         "kind": "prompt",
         "text": "You ask Claude: “Run the tests”"
       }
     },
     {
-      "at": 11.207,
+      "at": 11.192,
       "effect": "Pixel makes a curious face",
-      "line": "{\"t\":\"do\",\"id\":1859456437,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"say\":{},\"mood\":\"curious\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":1203830435,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you asked claude\",\"say\":{},\"mood\":\"curious\",\"loops\":2}}"
     },
     {
-      "at": 12.271,
+      "at": 12.261,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"analyzing\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"night\"],\"calls\":[[0,1,\"read\"]]}"
     },
     {
-      "at": 12.884,
+      "at": 12.9,
       "cause": {
         "kind": "tool",
         "text": "Claude reads README.md"
       }
     },
     {
-      "at": 13.894,
+      "at": 13.967,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"night\"],\"calls\":[[0,2,\"npm test\"]],\"wact\":[\"tests\",\"running tests\",1]}"
     },
     {
-      "at": 15.897,
+      "at": 15.998,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"night\"],\"calls\":[[0,2,\"npm test\"]],\"wact\":[\"tests\",\"PASS\",1,\"p\"]}"
     },
     {
-      "at": 15.897,
+      "at": 15.999,
       "cause": {
         "kind": "tool",
         "text": "Claude: run the tests"
       }
     },
     {
-      "at": 17.601,
+      "at": 17.648,
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"happy\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"night\"],\"wact\":[\"tests\",\"PASS\",1,\"p\"]}"
     },
     {
-      "at": 17.601,
-      "line": "{\"t\":\"do\",\"id\":1859456438,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
+      "at": 17.648,
+      "line": "{\"t\":\"do\",\"id\":1203830436,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
     },
     {
-      "at": 17.601,
+      "at": 17.649,
       "cause": {
         "kind": "done",
         "text": "Claude finishes"
       }
     },
     {
-      "at": 17.921,
+      "at": 17.967,
       "effect": "Pixel celebrates",
-      "line": "{\"t\":\"do\",\"id\":1859456439,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"good-morning\"},\"say\":{},\"mood\":\"proud\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":1203830437,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"good-morning\"},\"say\":{},\"mood\":\"proud\",\"loops\":2}}"
     },
     {
-      "at": 17.922,
+      "at": 17.968,
       "effect": "Pixel's mood is now proud",
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"proud\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"night\"],\"wact\":[\"tests\",\"PASS\",1,\"p\"]}"
     },
     {
-      "at": 21.895,
+      "at": 22.007,
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"proud\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"night\"]}"
     }
   ],
   "face": "gel",
-  "length": 24.32,
+  "length": 24,
   "name": "Pixel",
   "script": "51afa58d3952ec9611f0d323a54ac99fdd4de7b4dcc5f4a2d2d54b9c8d63956c",
   "takes": [],
