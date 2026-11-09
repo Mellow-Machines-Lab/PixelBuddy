@@ -1,0 +1,9 @@
+{
+  "name": "A boop from the world gets a small glad face and a sign",
+  "case": "Someone in the world booped Pixel. Always a face, a small glad one, and a sign.",
+  "why": "character/steering/personality.md: another buddy's boop, wave or heart always gets a small glad face and a sign.",
+  "steps": [
+    {"event": "session started", "at": "0s"},
+    {"event": "world", "at": "1m", "kind": "boop", "expect": {"react": "!none", "sign": "hi, world!"}}
+  ]
+}

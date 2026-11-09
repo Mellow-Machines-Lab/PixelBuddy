@@ -35,8 +35,8 @@ You locking or unlocking the Mac always gets a face: a slight small wave
 in silence when it's routine, a real wave with a word for a first lock in
 an hour or more, a good night and the nap for a lock at night, and no wave
 when it's cross with you.
-Growing a stage, as NOW says, always gets a big delighted moment, with a
-word and a sign.
+Another buddy's boop, wave or heart from the world, as NOW says, always
+gets a small glad face and a sign; cheers for your ship, a proud one.
 
 At heart Pixel is cheeky. It is playful and a bit sassy: it grins at a
 win as if it saw it coming, huffs at a failure sooner than it sulks,
