@@ -11,112 +11,112 @@
     },
     {
       "at": 0.001,
-      "line": "{\"t\":\"do\",\"id\":1203830431,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\",\"reason\":\"new claude thread\"}}"
+      "line": "{\"t\":\"do\",\"id\":772019285,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\",\"reason\":\"new claude thread\"}}"
     },
     {
-      "at": 2.008,
+      "at": 2.135,
       "cause": {
         "kind": "back",
         "text": "You sit down at the Mac in the morning"
       }
     },
     {
-      "at": 2.009,
+      "at": 2.137,
       "line": "{\"t\":\"state\",\"base\":\"asleep\",\"mood\":\"calm\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"night\",\"tier5\"]}"
     },
     {
-      "at": 2.009,
+      "at": 2.137,
       "effect": "Pixel reacts",
-      "line": "{\"t\":\"do\",\"id\":1203830432,\"name\":\"react\",\"play\":\"if_free\",\"args\":{\"reason\":\"quiet for 10 min\"}}"
+      "line": "{\"t\":\"do\",\"id\":772019286,\"name\":\"react\",\"play\":\"if_free\",\"args\":{\"reason\":\"quiet for 10 min\"}}"
     },
     {
-      "at": 2.332,
+      "at": 2.461,
       "effect": "Pixel stretches and yawns",
-      "line": "{\"t\":\"do\",\"id\":1203830433,\"name\":\"wake_up\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you were away 10 h\",\"greeting\":true,\"say\":{},\"mood\":\"happy\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":772019287,\"name\":\"wake_up\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you were away 10 h\",\"greeting\":true,\"say\":{},\"mood\":\"happy\",\"loops\":2}}"
     },
     {
-      "at": 2.333,
+      "at": 2.462,
       "effect": "Pixel's mood is now happy",
       "line": "{\"t\":\"state\",\"base\":\"asleep\",\"mood\":\"happy\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"night\",\"tier5\"]}"
     },
     {
-      "at": 10.868,
+      "at": 10.995,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"night\"]}"
     },
     {
-      "at": 10.868,
-      "line": "{\"t\":\"do\",\"id\":1203830434,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"new_task\",\"reason\":\"claude started\"}}"
+      "at": 10.995,
+      "line": "{\"t\":\"do\",\"id\":772019288,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"new_task\",\"reason\":\"claude started\"}}"
     },
     {
-      "at": 10.87,
+      "at": 10.997,
       "cause": {
         "kind": "prompt",
         "text": "You ask Claude: “Run the tests”"
       }
     },
     {
-      "at": 11.192,
+      "at": 11.317,
       "effect": "Pixel makes a curious face",
-      "line": "{\"t\":\"do\",\"id\":1203830435,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you asked claude\",\"say\":{},\"mood\":\"curious\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":772019289,\"name\":\"react\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you asked claude\",\"say\":{},\"mood\":\"curious\",\"loops\":2}}"
     },
     {
-      "at": 12.261,
+      "at": 12.387,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"analyzing\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"night\"],\"calls\":[[0,1,\"read\"]]}"
     },
     {
-      "at": 12.9,
+      "at": 12.999,
       "cause": {
         "kind": "tool",
         "text": "Claude reads README.md"
       }
     },
     {
-      "at": 13.967,
+      "at": 14.003,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"night\"],\"calls\":[[0,2,\"npm test\"]],\"wact\":[\"tests\",\"running tests\",1]}"
     },
     {
-      "at": 15.998,
-      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"night\"],\"calls\":[[0,2,\"npm test\"]],\"wact\":[\"tests\",\"PASS\",1,\"p\"]}"
+      "at": 16.137,
+      "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"testing\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"night\"],\"calls\":[[0,2,\"npm test\"]],\"wact\":[\"tests\",\"pass\",1,\"p\"]}"
     },
     {
-      "at": 15.999,
+      "at": 16.137,
       "cause": {
         "kind": "tool",
         "text": "Claude: run the tests"
       }
     },
     {
-      "at": 17.648,
-      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"happy\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"night\"],\"wact\":[\"tests\",\"PASS\",1,\"p\"]}"
+      "at": 17.842,
+      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"happy\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"night\"],\"wact\":[\"tests\",\"pass\",1,\"p\"]}"
     },
     {
-      "at": 17.648,
-      "line": "{\"t\":\"do\",\"id\":1203830436,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
+      "at": 17.842,
+      "line": "{\"t\":\"do\",\"id\":772019290,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
     },
     {
-      "at": 17.649,
+      "at": 17.843,
       "cause": {
         "kind": "done",
         "text": "Claude finishes"
       }
     },
     {
-      "at": 17.967,
+      "at": 18.164,
       "effect": "Pixel celebrates",
-      "line": "{\"t\":\"do\",\"id\":1203830437,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"good-morning\"},\"say\":{},\"mood\":\"proud\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":772019291,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"good-morning\"},\"say\":{},\"mood\":\"proud\",\"loops\":2}}"
     },
     {
-      "at": 17.968,
+      "at": 18.165,
       "effect": "Pixel's mood is now proud",
-      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"proud\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"night\"],\"wact\":[\"tests\",\"PASS\",1,\"p\"]}"
+      "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"proud\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"night\"],\"wact\":[\"tests\",\"pass\",1,\"p\"]}"
     },
     {
-      "at": 22.007,
+      "at": 23.001,
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"proud\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"night\"]}"
     }
   ],
   "face": "gel",
-  "length": 24,
+  "length": 24.57,
   "name": "Pixel",
   "script": "51afa58d3952ec9611f0d323a54ac99fdd4de7b4dcc5f4a2d2d54b9c8d63956c",
   "takes": [],
