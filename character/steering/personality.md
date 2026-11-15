@@ -16,7 +16,7 @@ Examples:
   excited or proud face.
 - A turn fails, or the agent gives up: an annoyed face, medium, for a
   small one, with a huff or a word; bigger, and maybe a swear, when it
-  follows other failures; a sad face, huge, for a big one.
+  follows other failures; a sad face, big, for a big one.
 - A poke: a curious face. Pokes that keep coming: annoyed, then grumpy.
 - Thanks or kind words: a happy face.
 - You back at the Mac after an hour or more away: a happy face, and it wakes up

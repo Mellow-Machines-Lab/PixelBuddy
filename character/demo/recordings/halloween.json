@@ -11,88 +11,85 @@
     },
     {
       "at": 0.001,
-      "line": "{\"t\":\"do\",\"id\":1969057225,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"session\",\"reason\":\"new claude thread\"}}"
-    },
-    {
-      "at": 0.001,
       "effect": "Pixel stretches and yawns",
-      "line": "{\"t\":\"do\",\"id\":1969057226,\"name\":\"wake_up\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"sign\":\"happy halloween!\"}}"
+      "line": "{\"t\":\"do\",\"id\":986719974,\"name\":\"wake_up\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"sign\":\"happy halloween!\"}}"
     },
     {
-      "at": 0.854,
+      "at": 0.849,
       "cause": {
         "kind": "back",
         "text": "You come back to the Mac after 10 hours away"
       }
     },
     {
-      "at": 0.855,
-      "line": "{\"t\":\"state\",\"base\":\"asleep\",\"mood\":\"calm\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"evening\",\"halloween\",\"tier5\"]}"
+      "at": 0.851,
+      "line": "{\"t\":\"state\",\"base\":\"asleep\",\"mood\":\"calm\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"evening\",\"halloween\",\"tier3\"]}"
     },
     {
-      "at": 0.855,
+      "at": 0.851,
       "effect": "Pixel reacts",
-      "line": "{\"t\":\"do\",\"id\":1969057227,\"name\":\"react\",\"play\":\"if_free\",\"args\":{\"reason\":\"quiet for 1 h\"}}"
+      "line": "{\"t\":\"do\",\"id\":986719975,\"name\":\"react\",\"play\":\"if_free\",\"args\":{\"reason\":\"quiet for 1 h\"}}"
     },
     {
-      "at": 1.18,
+      "at": 1.168,
       "effect": "Pixel stretches and yawns",
-      "line": "{\"t\":\"do\",\"id\":1969057228,\"name\":\"wake_up\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you were away 10 h\",\"greeting\":true,\"say\":{},\"mood\":\"mischievous\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":986719976,\"name\":\"wake_up\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"reason\":\"you were away 10 h\",\"greeting\":true,\"say\":{},\"mood\":\"mischievous\",\"loops\":2}}"
     },
     {
-      "at": 1.182,
+      "at": 1.169,
       "effect": "Pixel's mood is now happy",
-      "line": "{\"t\":\"state\",\"base\":\"asleep\",\"mood\":\"happy\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"evening\",\"halloween\",\"tier5\"]}"
+      "line": "{\"t\":\"state\",\"base\":\"asleep\",\"mood\":\"happy\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"evening\",\"halloween\",\"tier3\"]}"
     },
     {
-      "at": 7.583,
+      "at": 7.555,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"evening\",\"halloween\"]}"
     },
     {
-      "at": 7.583,
-      "line": "{\"t\":\"do\",\"id\":1969057229,\"name\":\"starting\",\"play\":\"if_free\",\"args\":{\"ctx\":\"new_task\",\"reason\":\"claude started\"}}"
+      "at": 7.555,
+      "effect": "Pixel reacts",
+      "line": "{\"t\":\"do\",\"id\":986719977,\"name\":\"react\",\"play\":\"if_free\",\"args\":{\"reason\":\"claude woke Pixel\"}}"
     },
     {
-      "at": 7.585,
+      "at": 7.558,
       "cause": {
         "kind": "prompt",
         "text": "You ask Claude: “Add a spooky theme for today”"
       }
     },
     {
-      "at": 8.653,
+      "at": 8.562,
       "line": "{\"t\":\"state\",\"base\":\"working\",\"act\":\"tool_use\",\"mood\":\"happy\",\"busy\":1,\"vol\":6,\"when\":[\"evening\",\"halloween\"],\"calls\":[[0,1,\"edit +1 -1\"]]}"
     },
     {
-      "at": 10.786,
+      "at": 10.695,
       "cause": {
         "kind": "tool",
         "text": "Claude edits src/theme.css"
       }
     },
     {
-      "at": 12.494,
+      "at": 12.36,
       "line": "{\"t\":\"state\",\"base\":\"idle\",\"mood\":\"happy\",\"busy\":0,\"idle\":1,\"vol\":6,\"when\":[\"evening\",\"halloween\"]}"
     },
     {
-      "at": 12.494,
-      "line": "{\"t\":\"do\",\"id\":1969057230,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
+      "at": 12.36,
+      "line": "{\"t\":\"do\",\"id\":986719978,\"name\":\"call\",\"play\":\"next\",\"ttl\":1500,\"args\":{\"a\":0,\"w\":\"done\",\"as\":\"gather\"}}"
     },
     {
-      "at": 12.495,
+      "at": 12.361,
       "cause": {
         "kind": "done",
         "text": "Claude finishes"
       }
     },
     {
-      "at": 12.818,
+      "at": 12.682,
       "effect": "Pixel celebrates",
-      "line": "{\"t\":\"do\",\"id\":1969057231,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":5000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"halloween\"},\"say\":{},\"mood\":\"mischievous\",\"loops\":2}}"
+      "line": "{\"t\":\"do\",\"id\":986719979,\"name\":\"task_complete\",\"play\":\"next\",\"ttl\":15000,\"args\":{\"outcome\":\"success\",\"turn\":0,\"who\":{\"agent\":\"claude\",\"thread\":\"halloween\"},\"say\":{},\"mood\":\"mischievous\",\"loops\":2}}"
     }
   ],
   "face": "gel",
-  "length": 19,
+  "length": 18.95,
   "name": "Pixel",
   "script": "7faa52ef843c0fcf79402175075a74d8fd41718971dc28284d4a9a654249a54b",
   "takes": [],
