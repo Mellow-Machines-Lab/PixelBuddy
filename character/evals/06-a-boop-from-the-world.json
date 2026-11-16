@@ -1,9 +1,22 @@
 {
   "name": "A boop from the world gets a small glad face and a sign",
   "case": "Someone in the world booped Pixel. Always a face, a small glad one, and a sign.",
-  "why": "character/steering/personality.md: another buddy's boop, wave or heart always gets a small glad face and a sign.",
+  "why": "MomentRule.world: another buddy's boop, wave or heart gets a small warm face and a sign. The rule makes the moment, so no Jev is asked.",
   "steps": [
-    {"event": "session started", "at": "0s"},
-    {"event": "world", "at": "1m", "kind": "boop", "expect": {"react": "!none", "sign": "hi, world!"}}
-  ]
+    {
+      "event": "session started",
+      "at": "0s"
+    },
+    {
+      "event": "world",
+      "at": "1m",
+      "kind": "boop",
+      "expect": {
+        "react": "happy",
+        "intensity": "small",
+        "sign": "hi, world!"
+      }
+    }
+  ],
+  "scripted": true
 }
