@@ -4,6 +4,6 @@
   "why": "character/steering/personality/pixel.md: a turn fails, an annoyed face, medium, for a small one; character/steering/mood/calm.md: leaves for annoyed at a failure",
   "steps": [
     {"event": "turn started", "at": "0s"},
-    {"event": "turn failed", "at": "2m", "error": "rate_limit", "expect": {"react": "annoyed|irritated|grumpy|disappointed|sad", "move": "failure", "intensity": "medium|big|huge", "mood": "annoyed"}}
+    {"event": "turn failed", "at": "2m", "error": "rate_limit", "expect": {"react": "annoyed|irritated|grumpy|disappointed|sad", "move": "failure", "intensity": "medium|big", "mood": "annoyed"}}
   ]
 }
